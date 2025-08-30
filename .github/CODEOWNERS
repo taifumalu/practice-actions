@@ -1,0 +1,9 @@
+# リポジトリ全体のコードオーナーを設定する（マッチする設定がない場合のフォールバック先）
+# 最後にマッチした定義を優先
+* @taifumalu
+
+# 特定のファイル種別のみコードオーナーをTeamに設定する
+*.txt @example-org/octocat-team
+
+# 特定のディレクトリ配下のコードオーナーを複数アカウントへ設定する
+.github/workflows/ @taifumalu @example-org/octocat-team
